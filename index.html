@@ -10,5 +10,36 @@
     <h1>this is git</h1>
     <h2>第一次修改</h2>
     <h3>第二次修改</h3>
+
+    <script>
+        window.onload=function(){
+            // var json={
+            //     data:{
+            //         "index":1
+            //     }
+            // }
+            // console.log(json);
+            // json.data["test"]="123";
+            // console.log(json);
+
+            var arr=[1,2,3,4,5,5,6];
+            console.log(oSort(arr));
+        　  function oSort(arr){
+            　　var result =[];
+            　　var newArr=[];
+            　　for(var i=0;i<arr.length;i++)
+            　　{
+            　　    if(!result[arr[i]])
+            　　    {
+                    　　newArr.push(arr[i]);
+                    　　result[arr[i]]=1;
+                　　}
+            　　}
+            console.log(result);
+            　　return newArr;
+        　　}
+
+        }
+    </script>
 </body>
 </html>
